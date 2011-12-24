@@ -1,3 +1,7 @@
+This is a port of Jeremy Keith's Pattern Primer project (https://github.com/adactio/Pattern-Primer) to ColdFusion. This 24Ways article gives some examples and ideas of how you might use such an application. http://24ways.org/2011/front-end-style-guides
+
 Create little snippets of markup and save them to the "patterns folder." The pattern primer will generate a list of all the patterns in that folder. You will see the pattern rendered as HTML. You will also get the source displayed in a textarea.
 
-You should be able to take the whole "pattern-primer" folder and drop it into your own project (assuming you're running PHP) **BUT** make sure to update the link element in the head of pattern-primer/index.php to point to your own CSS.
+I have configured it to look for *.html files in the patterns directory, but you can easily change it to look for *.cfm files (useful if you want dynamic content in your examples) by altering the filter attribute in the <CFDIRECTORY> tag in index.cfm.
+
+You should be able to take the whole "pattern-primer" folder and drop it into your own project (assuming you're running ColdFusion) **BUT** make sure to update the link element in the head of pattern-primer/index.cfm to point to your own CSS.
